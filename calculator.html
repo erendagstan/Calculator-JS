@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" contextmenu="calculatior">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="full-calculator">
+    <h1 class="calculator-text">Calculator</h1>
+
+    <p class = "js-sum calculation"> </p>
+
+    <p>
+        <button type="button" class="calculator-button gray-btn" onclick="updateCalc('1');"> 1 </button>
+        <button type="button" class="calculator-button gray-btn" onclick="updateCalc('2');"> 2 </button>
+        <button type="button" class="calculator-button gray-btn" onclick="updateCalc('3');"> 3 </button>
+        <button type="button" class="calculator-button orange-btn" onclick="updateCalc('+');"> + </button>
+    </p>
+    <p>
+        <button type="button" class="calculator-button gray-btn" onclick="updateCalc('4');"> 4 </button>
+        <button type="button" class="calculator-button gray-btn" onclick="updateCalc('5');"> 5 </button>
+        <button type="button" class="calculator-button gray-btn" onclick="updateCalc('6');"> 6 </button>
+        <button type="button" class="calculator-button orange-btn" onclick="updateCalc('-');"> - </button>
+    </p>
+    <p>
+        <button type="button" class="calculator-button gray-btn" onclick="updateCalc('7');"> 7 </button>
+        <button type="button" class="calculator-button gray-btn" onclick="updateCalc('8');"> 8 </button>
+        <button type="button" class="calculator-button gray-btn" onclick="updateCalc('9');"> 9 </button>
+        <button type="button" class="calculator-button orange-btn" onclick="updateCalc('*');"> * </button>
+    </p>
+    <p>
+        <button type="button" class="calculator-button gray-btn" onclick="updateCalc('0');"> 0 </button>
+        <button type="button" class="calculator-button gray-btn" onclick="updateCalc('.');"> . </button>
+        <button type="button" class="calculator-button gray-btn" onclick="
+            calculation = eval(calculation)
+            displayCalc();
+        "> = </button>
+        <button type="button" class="calculator-button orange-btn" onclick="updateCalc('/');"> / </button>
+    </p>
+    <p>
+        <button type="button" class="calculator-button gray-btn clear-btn" onclick="clearBtnFunction();"> Clear </button>
+
+    </p>
+</div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
